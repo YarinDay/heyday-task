@@ -3,13 +3,11 @@ function renderFiles() {
     let folders = getFolders()
     let elFilesContainer = document.querySelector('.files-container')
     let strHTML = Object.entries(files).map(([id, file]) => {
-        console.log(file);
         return `<div class="${file.type}" onclick="onFileSelected('${file.id}')">
         <div class="file-name">${file.name}</div>
         </div>`
     })
     strHTML.push(Object.entries(folders).map(([id, folder]) => {
-        console.log(folder);
         return `<div class="${folder.type}">
         <div class="folder-name">${folder.name}</div>
         </div>`
