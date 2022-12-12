@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>heyday task</title>
+</head>
+
+<body onload="onInit()">
+    <h1>Blue: Folder</h1>
+    <h1>Blueviolet: File</h1>
+    Sorry but I didnt have much time, I overthink about it..
+    <form class="file-form" onsubmit="onCreate(event)">
+        <input type="text" placeholder="Name" />
+        <select class="folder-name" type="text" placeholder="Folder name">
+        </select>
+
+        <select>
+            <option value="folder">Folder</option>
+            <option value="file">File</option>
+        </select>
+        <input type="submit" class="btn-form" value="Add" />
+    </form>
+    <hr class="hr" />
+    <div class="files-container"></div>
+    <div class="file-preview"></div>
+    <script src="js/file-controller.js"></script>
+    <script src="js/file-service.js"></script>
+    <script src="js/util-service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
